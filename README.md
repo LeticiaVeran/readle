@@ -173,15 +173,3 @@ the original data. Every sample user's password is `readle123`.
 - **"No module named ..."**: run `python -m pip install -r requirements.txt` again.
 - **AI rate limit**: wait a minute and try again.
 
-## Publishing on GitHub
-
-```
-git init
-git add .
-git commit -m "Readle - final project of Banco de Dados I"
-git branch -M main
-git remote add origin https://github.com/LeticiaVeran/readle.git
-git push -u origin main
-```
-
-Create the empty `readle` repository on GitHub first. `.gitignore` keeps `.env` out of it.
