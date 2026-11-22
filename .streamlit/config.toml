@@ -1,0 +1,68 @@
+# Visual settings of Readle: colors and fonts.
+# Streamlit reads this file when the app starts; restart the app after changing it.
+#
+# The side menu is dark green, like the cloth cover of a library book,
+# and the main area is a clean white page.
+
+[browser]
+gatherUsageStats = false
+
+[client]
+# Hides the "Deploy" button and the developer menu at the top right
+toolbarMode = "minimal"
+
+[server]
+# Lets Streamlit serve the files of the "static" folder (fonts, logo and icon)
+enableStaticServing = true
+
+# ---------------------------------------------------------------- Fonts
+# One font for everything: Libre Franklin, a free version of Franklin Gothic, a classic of
+# newspapers and book covers. The files are inside the project (static/fonts), so they work
+# without internet. Free font (SIL Open Font License, see the LICENSE file in static/fonts).
+
+[[theme.fontFaces]]
+family = "franklin"
+url = "app/static/fonts/libre-franklin-normal.woff2"
+style = "normal"
+weight = "100 900"
+
+[[theme.fontFaces]]
+family = "franklin"
+url = "app/static/fonts/libre-franklin-italic.woff2"
+style = "italic"
+weight = "100 900"
+
+# ---------------------------------------------------------------- Main area
+[theme]
+base = "light"
+font = "franklin, sans-serif"
+headingFont = "franklin, sans-serif"
+headingFontSizes = ["2.25rem", "1.5rem", "1.2rem", "1.05rem", "1rem", "0.9rem"]
+headingFontWeights = [700, 700, 700, 600, 600, 600]
+baseFontSize = 16
+
+# Colors
+primaryColor = "#2B6650"              # buttons and selected options (book cloth green)
+backgroundColor = "#FFFFFF"           # the page
+secondaryBackgroundColor = "#F2F5F2"  # inside of the input fields
+textColor = "#24292A"                 # ink
+borderColor = "#D3DBD5"
+showWidgetBorder = true
+linkColor = "#2B6650"
+dataframeHeaderBackgroundColor = "#F2F5F2"
+greenColor = "#2E7D57"                # success messages
+blueColor = "#3E6E8E"                 # information messages
+chartCategoricalColors = ["#2B6650", "#B9862F", "#3E6E8E", "#8A4F5C", "#6B7F3A"]
+
+# Shapes
+baseRadius = "0.4rem"
+paddingTop = "3rem"
+
+# ---------------------------------------------------------------- Side menu
+[theme.sidebar]
+backgroundColor = "#1F4A3A"
+secondaryBackgroundColor = "#2A5A47"
+textColor = "#E6EDE8"
+primaryColor = "#F1E7C8"
+borderColor = "#3B6B57"
+headingFont = "franklin, sans-serif"
